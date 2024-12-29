@@ -74,14 +74,14 @@ WORKDIR /app
 # RUN ln -s /opt/python /python
 
 # Copiar o script de IA e modelo para o container
-COPY ./main3.py /app
-COPY ./embeddings.faiss /app
-COPY ./metadata.pkl /app
-COPY ./processos_antigos /app/processos_antigos
+#COPY ./main3.py /app
+#COPY ./embeddings.faiss /app
+#COPY ./metadata.pkl /app
+#COPY ./processos_antigos /app/processos_antigos
 # COPY ./models /app/models
 
 # Instalar dependências do projeto, se necessário
-COPY ./requirements.txt /app
+#COPY ./requirements.txt /app
 # RUN pip install -r requirements.txt
 
 # Expor a porta necessária (por exemplo, 8080)
